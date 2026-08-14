@@ -1,0 +1,12 @@
+{ ... }:
+
+{
+  home.username = "beta";
+  home.homeDirectory = "/home/beta";
+
+  xdg.configFile."niri/config.kdl".source = ./config.kdl;
+  xdg.configFile."alacritty/alacritty.toml".source = ./alacritty.toml;
+  xdg.configFile."quickshell/main/shell.qml".source = ./shell.qml;
+
+  home.stateVersion = "26.05";
+}
