@@ -10,10 +10,12 @@ OUTPUT_FILE="${TIMESTAMP}.txt"
   find . -type f \
     ! -name "copy.sh" \
     ! -name "*.txt" \
+    ! -name "*.jpg" \
     ! -path "./.git/*" \
     ! -name ".gitignore" \
     ! -name "README.md" \
     ! -name "flake.lock" \
+    ! -name "hardware-configuration.nix" \
     -print0 |
   while IFS= read -r -d '' f; do
     printf '\n===== %s =====\n\n' "$f"
