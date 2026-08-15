@@ -31,4 +31,6 @@
       source = ./../../ssh/dev-hayato-shiina-key.pub;
     };
   };
+
+  services.ssh-agent.enable = true;
 }
