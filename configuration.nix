@@ -59,6 +59,8 @@ in {
     };
   };
 
+  services.ssh-agent.enable = true;
+
   system.stateVersion = "26.05";
 
   environment.systemPackages = with pkgs; [
