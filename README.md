@@ -141,7 +141,7 @@ sh copy.sh
 
 NixOS Rebuild
 ```bash
-sudo nixos-rebuild switch --flake "path:/etc/nixos#nixos"
+nixos-rebuild switch --sudo --flake "path:.config/nixos#nixos"
 ```
 
 一時的にgitをインストールして、リポジトリクローン
