@@ -148,3 +148,19 @@ nixos-rebuild switch --sudo --flake "path:$HOME/.config/nixos#nixos"
 ```bash
 nix shell nixpkgs#git -c git clone https://github.com/dev-hayato-shiina/experimental-nixos-config.git
 ```
+
+SSH Agentに秘密鍵を追加
+```bash
+ssh-add ~/.ssh/<秘密鍵名>
+```
+
+SSH Agentに登録されている秘密鍵を確認
+```bash
+ssh-add -l
+```
+
+Gitの変更をステージングしてコミット
+```bash
+git add .
+git -c user.name="<GitHubユーザー名>" -c user.email="<GitHubに登録したメールアドレス>" commit -m "<コミットメッセージ>"
+```
