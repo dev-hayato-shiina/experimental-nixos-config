@@ -15,15 +15,13 @@
     enable = true;
     enableDefaultConfig = false;
 
-    matchBlocks = {
+    settings = {
       "dev-hayato-shiina" = {
-        hostname = "github.com";
-        user = "git";
-        identityFile = "${config.home.homeDirectory}/.ssh/dev-hayato-shiina-key";
-        extraOptions = {
-          TCPKeepAlive = "yes";
-          IdentitiesOnly = "yes";
-        };
+        HostName = "github.com";
+        User = "git";
+        IdentityFile = "${config.home.homeDirectory}/.ssh/dev-hayato-shiina-key";
+        TCPKeepAlive = true;
+        IdentitiesOnly = true;
       };
     };
   };
