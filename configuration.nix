@@ -66,6 +66,8 @@ in {
     git
     xwayland-satellite
     niri
+    bitwarden-cli
+    bitwarden-desktop
     alacritty
     neovim
   ];
