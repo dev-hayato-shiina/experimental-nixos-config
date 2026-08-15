@@ -25,24 +25,12 @@
           IdentitiesOnly = "yes";
         };
       };
-      "sheena-develop" = {
-        hostname = "github.com";
-        user = "git";
-        identityFile = "${config.home.homeDirectory}/.ssh/sheena-develop-key";
-        extraOptions = {
-          TCPKeepAlive = "yes";
-          IdentitiesOnly = "yes";
-        };
-      };
     };
   };
 
   home.file = {
     ".ssh/dev-hayato-shiina-key.pub" = {
       source = ./../../ssh/dev-hayato-shiina-key.pub;
-    };
-    ".ssh/sheena-develop-key.pub" = {
-      source = ./../../ssh/sheena-develop-key.pub;
     };
   };
 }
