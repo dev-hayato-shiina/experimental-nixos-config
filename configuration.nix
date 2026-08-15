@@ -63,7 +63,6 @@ in {
 
   environment.systemPackages = with pkgs; [
     inputs.quickshell.packages.${system}.default
-    zsh
     git
     jq
     xwayland-satellite
@@ -74,5 +73,6 @@ in {
     neovim
   ];
 
+  programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
 }
