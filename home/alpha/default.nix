@@ -4,6 +4,9 @@
   home.username = "alpha";
   home.homeDirectory = "/home/alpha";
 
+  # TODO: 分割
+  programs.zsh.enable = true;
+
   xdg.configFile."niri/config.kdl".source = ./config.kdl;
   xdg.configFile."alacritty/alacritty.toml".source = ./alacritty.toml;
   xdg.configFile."quickshell/main/shell.qml".source = ./shell.qml;
