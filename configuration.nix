@@ -73,4 +73,6 @@ in {
     alacritty
     neovim
   ];
+
+  users.defaultUserShell = pkgs.zsh;
 }
