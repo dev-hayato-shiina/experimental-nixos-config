@@ -64,6 +64,7 @@ in {
   environment.systemPackages = with pkgs; [
     inputs.quickshell.packages.${system}.default
     git
+    jq
     xwayland-satellite
     niri
     bitwarden-cli
