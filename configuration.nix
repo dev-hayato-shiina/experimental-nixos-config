@@ -67,6 +67,7 @@ in {
     jq
     xwayland-satellite
     niri
+    zellij
     bitwarden-cli
     bitwarden-desktop
     alacritty
