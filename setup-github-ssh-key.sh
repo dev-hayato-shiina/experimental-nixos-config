@@ -47,4 +47,6 @@ ssh -T dev-hayato-shiina
 # パスフレーズのポップアップが表示されず、止まってしまう場合は、以下のコマンドでパスフレーズを空にして、再実行してください。
 # ssh-keygen -p -f ~/.ssh/dev-hayato-shiina-key
 
+# SSH Agentに秘密鍵を登録して、パスフレーズの入力を省略できるようにする
+ssh-add ~/.ssh/dev-hayato-shiina-key
 # =========================
